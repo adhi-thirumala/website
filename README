@@ -1,0 +1,2 @@
+new personal site with zola - blazing fast static site generator written in rust.
+do zola build in root to generate files in public and then serve root from there
