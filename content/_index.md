@@ -17,7 +17,7 @@ Email: me[at]adhithirumala[dot]com \
 Github: [adhi-thirumala](https://www.github.com/adhi-thirumala) \
 Linkedin: [Adhitya Thirumala](https://www.linkedin.com/in/adhitya-thirumala/) \
 Google Scholar: [Adhitya Thirumala](https://scholar.google.com/citations?user=VvS99pYAAAAJ&hl=en) \
-ORCID: [0009-0003-6634-7066](https://orcid.org/0009-0003-6634-7066)
+ORCID: [0009-0003-6634-7066](https://orcid.org/0009-0003-6634-7066) \
 Matrix: @adhiadhiadhiadhi:matrix.org (for now until i self host a homeserver)
 {% end %}
 
