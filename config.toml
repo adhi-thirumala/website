@@ -1,0 +1,56 @@
+# The URL the site will be built for
+base_url = "https://adhithirumala.com"
+
+# The site title and description
+title = "Adhitya Thirumala"
+description = "Adhitya Thirumala's personal website"
+
+# The default author for pages
+author = "Adhitya Thirumala"
+
+# Enable the theme
+theme = "terminus"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# When set to "true", a feed is automatically generated.
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+
+# Taxonomies
+taxonomies = [
+    { name = "tags", feed = true },
+]
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+highlight_code = true
+
+# The theme to use for code highlighting.
+highlight_theme = "monokai"
+
+# When set to "true", emoji aliases translated to their corresponding
+# Unicode emoji equivalent in the rendered Markdown files.
+render_emoji = true
+
+[extra]
+favicon_emoji = "🦀"
+layout = "center"
+show_default_author = false
+color_scheme = "ashen"
+
+main_menu = [
+    { name = "musings", url = "blog", trailing_slash = true },
+    { name = "resume", url = "resume", trailing_slash = true },
+    { name = "github", url = "https://github.com/adhi-thirumala", new_tab = true },
+]
+
+socials = [
+    { name = "email", url = "mailto:me@adhithirumala.com" },
+    { name = "github", url = "https://github.com/adhi-thirumala" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/adhitya-thirumala/" },
+]
