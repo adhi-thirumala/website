@@ -36,8 +36,12 @@ u can find my pgp public key [here](/publickey.asc)! my fingerprint is
 `C320 D098 524A BD16 D76F  A948 9EA6 0094 AB56 CE3A`
 
 send me secret messages only i can read. one day i will use this to sign things other than my github commits.
+{% end %}
+
+{% alert(type="tip", title="badges") %}
+<img src = "/images/outputsmall.gif" alt="cs ling badge">
+{% end %}
 
 ---
 
 this page is hosted on ~~github pages~~ my own VPS.
-{% end %}

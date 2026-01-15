@@ -27,15 +27,13 @@ taxonomies = [
 build_search_index = false
 
 [markdown]
-# Whether to do syntax highlighting
-highlight_code = true
-
-# The theme to use for code highlighting.
-highlight_theme = "monokai"
-
 # When set to "true", emoji aliases translated to their corresponding
 # Unicode emoji equivalent in the rendered Markdown files.
 render_emoji = true
+
+# Syntax highlighting
+[markdown.highlighting]
+theme = "monokai"
 
 [extra]
 favicon_emoji = "🦀"
