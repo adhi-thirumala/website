@@ -42,6 +42,8 @@ jobs:
           context: .
           platforms: ${{ matrix.platform }}
           push: true
+          build-args: |
+            GIT_HASH=${{ github.sha }}
           tags: |
             ${{ env.IMAGE_NAME }}:latest-${{ matrix.suffix }}
             ${{ env.IMAGE_NAME }}:${{ github.sha }}-${{ matrix.suffix }}
