@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://adhithirumala.com"
+base_url = "/"
 
 # The site title and description
 title = "Adhitya Thirumala"

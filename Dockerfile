@@ -1,9 +1,10 @@
-FROM ghcr.io/getzola/zola:v0.17.1 as zola
-
+FROM jauderho/zola:latest AS zola
+USER root
 COPY . /project
 WORKDIR /project
-RUN ["zola", "build"]
+RUN zola build 
 
-FROM ghcr.io/static-web-server/static-web-server:2-scratch
+FROM ghcr.io/static-web-server/static-web-server:2.40.1-alpine
+
 WORKDIR /
 COPY --from=zola /project/public /public
