@@ -1,4 +1,4 @@
-FROM jauderho/zola:latest AS zola
+FROM --platform=linux/amd64 jauderho/zola:latest AS zola
 USER root
 COPY . /project
 WORKDIR /project
