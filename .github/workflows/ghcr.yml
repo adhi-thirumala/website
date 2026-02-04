@@ -15,12 +15,15 @@ jobs:
       packages: write
     strategy:
       matrix:
-        platform: [linux/amd64, linux/arm64]
         include:
           - platform: linux/amd64
             suffix: amd64
+            runner: ubuntu-latest
           - platform: linux/arm64
             suffix: arm64
+            runner: ubuntu-24.04-arm
+
+    runs-on: ${{ matrix.runner }}
 
     steps:
       - uses: actions/checkout@v4
@@ -32,8 +35,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: docker/setup-qemu-action@v3
 
       - uses: docker/setup-buildx-action@v3
 
@@ -59,14 +60,14 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: docker/setup-buildx-action@v3
+
       - name: Create and push multi-arch manifests
         run: |
-          docker manifest create ${{ env.IMAGE_NAME }}:latest \
+          docker buildx imagetools create -t ${{ env.IMAGE_NAME }}:latest \
             ${{ env.IMAGE_NAME }}:latest-amd64 \
             ${{ env.IMAGE_NAME }}:latest-arm64
-          docker manifest push ${{ env.IMAGE_NAME }}:latest
 
-          docker manifest create ${{ env.IMAGE_NAME }}:${{ github.sha }} \
+          docker buildx imagetools create -t ${{ env.IMAGE_NAME }}:${{ github.sha }} \
             ${{ env.IMAGE_NAME }}:${{ github.sha }}-amd64 \
             ${{ env.IMAGE_NAME }}:${{ github.sha }}-arm64
-          docker manifest push ${{ env.IMAGE_NAME }}:${{ github.sha }}
