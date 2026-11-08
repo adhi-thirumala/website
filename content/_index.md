@@ -44,7 +44,9 @@ send me secret messages only i can read. one day i will use this to sign things 
 {% end %}
 
 {% alert(type="tip", title="badges") %}
+<a href="https://csplusling.github.io">
 <img src = "/images/outputsmall.gif" alt="cs ling badge">
+</a>
 {% end %}
 
 ---
