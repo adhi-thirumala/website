@@ -7,11 +7,11 @@ max_posts = 5
 +++
 
 {% alert(type="info", title="about me") %}
-i'm at the ~~cornfields~~ university of illinois urbana-champaign majoring in computer science + linguistics and minoring in math. i'm interested in systems software, programming language theory, compilers, large-scale infrastructure, reliability, and ml. last summer, i had the most wonderful time interning cloudflare where i worked on flamingo, a distributed synthetic probe generation tool for cloudflare's edge network. 
+i'm at the ~~cornfields~~ university of illinois urbana-champaign majoring in computer science + linguistics and minoring in math. i'm (almost) exclusively interested in software that is big, fast, and made with care by people who have a deep interest in their craft. this includes (but is not limited to) systems software, programming language theory, compilers, storage, databases, reliability, build systems, networking, and inference. last summer, i had the most wonderful time interning cloudflare where i worked on flamingo, a distributed synthetic probe generation tool for cloudflare's edge network. 
 
 i have done research in the past on nlp alongside [dr. elisa ferracane](https://elisaf.github.io). i'm also an ardent linux user and i currently daily drive ~~fedora~~ arch linux on my framework laptop (although the more i look at it, the more i get enthralled with the idea of [nixos](https://nixos.org/)). last year, i was the treasurer for [acm @ uiuc](https://acm.illinois.edu) - the largest collective of CS students at Illinois - where i managed funds and enabled many students across the club to pursue their passions and build projects. i now spend my time running the [agent fan club](agentfanclub.org) and contributing to our [infrastructure](infra.acm.illinois.edu). my introduction to this organization was the amazing [gnu linux user group](https://lug.acm.illinois.edu) where i was given an addiction to ricing, the tiling windows manager, homelabbing and many other ways to waste time "productively".
 
-outside of academics, i was a policy debate competitor in high school, and i am continuing this activity in college by coaching a group of highly motivated high schoolers from small programs, similar to the one i was from. i also enjoy playing many old Nintendo games and enjoy being part of the homebrew scene for many of these older consoles. a not so long time ago, i went to fox chapel area high school.
+outside of academics, i was a policy debate competitor in high school, and i coached a set of teams for my first two years of college. i also enjoy playing many old Nintendo games and enjoy being part of the homebrew scene for many of these older consoles. i also enjoy competitive pokémon of all formats. a not so long time ago, i went to fox chapel area high school in pittsburgh.
 {% end %}
 
 {% alert(type="tip", title="places to find me") %}
@@ -20,19 +20,20 @@ Github: [adhi-thirumala](https://www.github.com/adhi-thirumala) \
 Linkedin: [Adhitya Thirumala](https://www.linkedin.com/in/adhitya-thirumala/) \
 Google Scholar: [Adhitya Thirumala](https://scholar.google.com/citations?user=VvS99pYAAAAJ&hl=en) \
 ORCID: [0009-0003-6634-7066](https://orcid.org/0009-0003-6634-7066) \
-Matrix: @adhi:adhithirumala.com (finally setup a homeserver!)~~@adhiadhiadhiadhi:matrix.org (for now until i self host a homeserver)~~
-{% end %}
-
-{% alert(type="info", title="publications") %}
-- [Clickbait Classification and Spoiling Using Natural Language Processing](https://arxiv.org/pdf/2306.14907) 2023 - Authors: Adhitya Thirumala and Elisa Ferracane, Ph.D.
-- [Extractive Question Answering on Queries in Hindi and Tamil](https://arxiv.org/pdf/2210.06356) 2022 - Authors: Adhitya Thirumala and Elisa Ferracane, Ph.D.
+Matrix: [@adhi:adhithirumala.com](https://matrix.to/#/@adhi:adhithirumala.com) (finally setup a homeserver!)~~@adhiadhiadhiadhi:matrix.org (for now until i self host a homeserver)~~
 {% end %}
 
 {% alert(type="tip", title="cool projects") %}
+- [krillion-bench](https://krillion.agentfan.club) - made a bunch of agents play krillion (in the browser)! incredible showcase of the cloudflare dev platform - all the agents that play the game run in durable objects, and use the browser run feature on cloudflare. oss models go through workers ai, the rest go through ai gateway, and data is stored in d1! surprisingly accurate benchmark that matches the vibes that i (and others) have with other models
 - [compiler](https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs) - going through sandler's *writing a c compiler* in rust.
 - [oxeye](https://github.com/adhi-thirumala/oxeye): a minecraft-discord bridge to show who's online in your discord server. a bit over-engineered, written in rust, and self-hosted!
 - [mailpipe](https://github.com/realartists-gitmo/mailpipe): an email discord bridge on cloudflare workers that i made quickly to not deal with email chain sending when judging policy debate rounds.
 - [flowstate](https://github.com/realartists-gitmo/flowstate) - reinventing verbatim, the set of word macros that debaters use. its a high-performance rich-text editor purpose built for this usecase. written in rust and gpui. there's also purely p2p collaboration based on [iroh](https://www.iroh.computer/). i'll be honest, don't spend much time here, and moreso serve as a technical advisor to my friends who serve as technical advisors to agents.
+{% end %}
+
+{% alert(type="info", title="research") %}
+- [Clickbait Classification and Spoiling Using Natural Language Processing](https://arxiv.org/pdf/2306.14907) 2023 - Authors: Adhitya Thirumala and Elisa Ferracane, Ph.D.
+- [Extractive Question Answering on Queries in Hindi and Tamil](https://arxiv.org/pdf/2210.06356) 2022 - Authors: Adhitya Thirumala and Elisa Ferracane, Ph.D.
 {% end %}
 
 {% alert(type="note", title="misc") %}
